@@ -332,9 +332,7 @@ app.post('/v1/uploadImage',function (req, res){
       	keepExtensions: true
       });
 
-	form.on('end', function() {
-      res.end();
-    });
+
     
     form.parse(req,function(err,fields,files){
         var Chat = mongoose.model('Chat',chatSchema,'chat'+fields.roomKey);
@@ -346,7 +344,7 @@ app.post('/v1/uploadImage',function (req, res){
 				isImageFile : fields.isImageFile, 
 				istype : fields.istype, 
 				showme : fields.showme, 
-				dwimgsrc : fields.dwimgsrc, 
+				dwimgsrc : fields.dwimgsrc,
 				dwid : fields.dwid,
 				serverfilename : baseName(files.file.path), 
 				msgTime : fields.msgTime,
@@ -399,6 +397,10 @@ app.post('/v1/uploadImage',function (req, res){
         /**
 		 *
          */
+
+        form.on('end', function() {
+            res.end();
+        });
 
 
 

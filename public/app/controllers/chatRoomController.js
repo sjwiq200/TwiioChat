@@ -283,6 +283,7 @@ angular.module('Controllers')
 
         // recieving new image message
         $socket.on("new message image", function(data){
+            console.log('new message image ==>'+ JSON.stringify(data));
             $scope.showme = true;
             if(data.userName == $rootScope.userName){
                 data.ownMsg = true;
@@ -409,6 +410,7 @@ angular.module('Controllers')
                         transformRequest: angular.identity,
                         headers: { 'Content-Type': undefined }
                     }).then(function (response) {
+                        console.log(response.toString());
                     });
 
                 }
