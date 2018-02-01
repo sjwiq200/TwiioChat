@@ -1,0 +1,7 @@
+{"msg":"안녕하세요","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"11:56 am"}
+{"msg":"12학번 심재우입니다.","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"11:56 am"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"11:57 am","serverfilename":"upload_c04d244daa57daa1db250b34f84cc032.png","filename":"upload_2ce3461f0715a1f521a6c33c8e2e4a82.png","size":"133.25 KB"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"userName":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"11:57 am","serverfilename":"map(1517453833129).png"}
+{"msg":"안녕하세요!!!","hasMsg":true,"userName":"sjwiq7610","hasFile":false,"msgTime":"11:57 am"}
+{"msg":"테스트!","hasMsg":true,"userName":"sjwiq7610","hasFile":false,"msgTime":"11:57 am"}
+{"userName":"sjwiq7610","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"11:57 am","serverfilename":"upload_0f027dcb88df7f44fb6ab9b0d993d37a.png","filename":"upload_2ce3461f0715a1f521a6c33c8e2e4a82.png","size":"133.25 KB"}

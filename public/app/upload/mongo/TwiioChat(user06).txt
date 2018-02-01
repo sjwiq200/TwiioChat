@@ -1,0 +1,211 @@
+{"msg":"안녕하십니까","hasMsg":true,"username":"admin","hasFile":false,"msgTime":"3:21 pm"}
+{"msg":"12학번 심재우입니다,","hasMsg":true,"username":"admin","hasFile":false,"msgTime":"3:21 pm"}
+{"msg":"테스트테스트","hasMsg":true,"username":"admin","hasFile":false,"msgTime":"3:26 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"3:26 pm"}
+{"msg":"사진은 왜 다시 안나올까요?","hasMsg":true,"username":"user18","hasFile":false,"msgTime":"4:26 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"4:54 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"4:55 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"4:57 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"5:10 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"5:12 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"5:23 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"5:48 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"5:55 pm"}
+{"username":"admin","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"6:12 pm","serverfilename":"upload_a27b3befad9ae18f2bee97ca6b3cfb54.png","filename":"스크린샷 2018-01-21 오후 5.31.41.png","size":"25.29 KB"}
+{"username":"user18","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"6:20 pm","serverfilename":"upload_21d6d21bbde46806aa8ffff9fb8f10eb.png","filename":"스크린샷 2018-01-21 오후 5.31.41.png","size":"25.29 KB"}
+{"msg":"asdfasdf","hasMsg":true,"username":"admin","hasFile":false,"msgTime":"12:48 pm"}
+{"msg":"hello","hasMsg":true,"username":"sjwiq7610","hasFile":false,"msgTime":"1:29 pm"}
+{"msg":"얌","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"크롬이로 하니까 안되","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"??","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"누구세영","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"크롬도 될거에여","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"비밀","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"안되","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"방금 수정좀 했어여","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"뭘로 들어온건데염?","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"ㅇㅅㅇ?","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:37 pm"}
+{"msg":"익스플로러","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:38 pm"}
+{"username":"user05","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"1:38 pm","serverfilename":"upload_a6a7e49542012ac3621fd4a3b4fa5cca.jpg","filename":"people.jpg","size":"263.50 KB"}
+{"msg":"ㅇㅅㅇ","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"great","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"오","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"원더걸스!","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"알러븅!","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"근데 내가 만들었지만","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"진짜 너무 멋지다","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"dh","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"오","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"껏다 켯는데","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"고대러 잇네","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"당연하져","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"ㅎㅎㅎㅎ","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"재우야 멋지다","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"호에엥","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:38 pm"}
+{"msg":"근데 그게 보여","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"user05 누구세영!","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"뭐가여 누님","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"그","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"아바타","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"선택하는그창","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"고게","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"잠깐보엿다가열루넘어감","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"거기서","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"인증 털고 넘어가야되여","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"호에엥","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"화면만 지우면 될듯 ㅎㅎ","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"그거 지워","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"누군지 알려주세여","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"글고 스크롤바가","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"다은누나죠?","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:39 pm"}
+{"msg":"두개가","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:40 pm"}
+{"msg":"겹쳐잇어","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:40 pm"}
+{"msg":"흥!","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:40 pm"}
+{"msg":"몰라염","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:40 pm"}
+{"msg":"안된ㄷ다","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:40 pm"}
+{"msg":"짱이다","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:41 pm"}
+{"msg":"째쨰우","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:41 pm"}
+{"msg":"스크롤 저거없애이제","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:41 pm"}
+{"msg":"ㅇㅅㅇ","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:42 pm"}
+{"msg":"새로고침도 고쳐야 되요","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:42 pm"}
+{"msg":"디자인 따위 일단 개나주고","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:42 pm"}
+{"msg":"기능 추가할거에염!","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:42 pm"}
+{"msg":"그개뭐야","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:42 pm"}
+{"msg":"f5누르면","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:42 pm"}
+{"msg":"서버가 터져여","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:42 pm"}
+{"msg":"안뇽","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:43 pm"}
+{"msg":"안녕하세여!","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:43 pm"}
+{"msg":"ㅋㅋㅋㅋㅋ","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:43 pm"}
+{"msg":"짱이다","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:43 pm"}
+{"msg":"쨰쨰우","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:43 pm"}
+{"msg":"새로고침해봐도됨?","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:44 pm"}
+{"msg":"제발","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:43 pm"}
+{"msg":"안더ㅐ여","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:43 pm"}
+{"msg":"웅","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:44 pm"}
+{"msg":"새로고침하면 서버 터져여","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:44 pm"}
+{"msg":"ㅋㅋㅋㅋ","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:44 pm"}
+{"msg":"왜그런거야","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:44 pm"}
+{"msg":"저도 아직 잘 몰라염 ㅎㅎ","hasMsg":true,"username":"sjwiq7610","hasFile":false,"msgTime":"1:44 pm"}
+{"msg":"재우아이쿠","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:44 pm"}
+{"msg":"7610","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:44 pm"}
+{"msg":"ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"1:45 pm"}
+{"username":"sjwiq7610","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"1:45 pm","serverfilename":"upload_ea2631e6b7bc3f66be1ab159fd47bfc1.JPG","filename":"IMG_8764.JPG","size":"1.16 MB"}
+{"msg":"사진 안보임","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:45 pm"}
+{"msg":"누르면","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:45 pm"}
+{"msg":"보여여","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:45 pm"}
+{"msg":"누르면 에러남","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"헐","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"???","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"깜짞아","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"안보여여?","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"놀랫자나","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"첫번째 사진","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"없데","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"ㅋㅋ","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"아 그 전에는","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"제가 만들다","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"실패해서","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"ㅎㅎㅅㅎ","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:46 pm"}
+{"msg":"쨰우야 훌륭하다","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:47 pm"}
+{"msg":"GREAT","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:47 pm"}
+{"msg":"꺆꺆","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:47 pm"}
+{"msg":"저는 그럼 수정할게 많으니","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:47 pm"}
+{"msg":"이만 나가보겠습니당","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:47 pm"}
+{"msg":"나도","hasMsg":true,"username":"user06","hasFile":false,"msgTime":"1:47 pm"}
+{"msg":"그럼 ㅃㅃㅇ","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"1:47 pm"}
+{"msg":"asdfasdfa","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"2:23 pm"}
+{"username":"sjwiq7610","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"5:08 pm","serverfilename":"upload_e1214051aeca75ec527b7d79edc2e8cd.png","filename":"스크린샷 2018-01-21 오후 5.31.41.png","size":"25.29 KB"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"5:09 pm","serverfilename":"upload_27175624fa31c5aabfe5c97a1b6d5d09.png","filename":"스크린샷 2018-01-21 오후 5.31.41.png","size":"25.29 KB"}
+{"username":"sjwiq7610","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"5:10 pm","serverfilename":"upload_22b99126e588d4585734ec011103dcbd.png","filename":"스크린샷 2018-01-21 오후 5.31.41.png","size":"25.29 KB"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"7:12 pm"}
+{"msg":"B","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"8:57 pm"}
+{"msg":"옫","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"8:57 pm"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"11:53 am"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"4:48 pm","serverfilename":"upload_de0d60ea578679951b57761e18e90855.png","filename":"스크린샷 2018-01-21 오후 5.31.41.png","size":"25.29 KB"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"4:52 pm","serverfilename":"upload_df106225b530a19e2671c069e7eeef76.png","filename":"스크린샷 2018-01-30 오전 11.55.09.png","size":"133.25 KB"}
+{"msg":"ssss","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"8:22 pm"}
+{"msg":"aszasdfa","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"2:10 am"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"2:11 am","serverfilename":"upload_bf13edb3f967fc764d762b5b417a02d3.png","filename":"스크린샷 2018-01-30 오전 11.55.09.png","size":"133.25 KB"}
+{"msg":"zzzzzzzzzzzzz","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"9:19 am"}
+{"msg":"hi","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"9:19 am"}
+{"msg":"jaewoo","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"9:19 am"}
+{"msg":"ㅎㅇㅎㅇ","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"9:19 am"}
+{"msg":"님 이제 구글맵좀 해주세여","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"9:19 am"}
+{"msg":"bye","hasMsg":true,"username":"user05","hasFile":false,"msgTime":"9:19 am"}
+{"msg":"ㅇㅇ","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"9:19 am"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"9:36 am","serverfilename":"upload_2d208753fed4fe8a1fc420fb71b389d5.png","filename":"스크린샷 2018-01-30 오전 11.55.09.png","size":"133.25 KB"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"9:40 am","serverfilename":"upload_f28b7cd8c3578798f65cc6e5c4cffcc4.png","filename":"스크린샷 2018-01-21 오후 5.31.41.png","size":"25.29 KB"}
+{"msg":"https://maps.google.com/?cid=15615094953911582808","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"11:51 am"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"11:53 am"}
+{"msg":"https://maps.google.com/?cid=15615094953911582808","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"11:54 am"}
+{"msg":"https://maps.google.com/?cid=5586800432419540325","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"11:55 am"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"11:57 am"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"11:58 am"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"11:59 am"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"12:00 pm"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"12:01 pm"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"12:02 pm"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"12:19 pm","serverfilename":"upload_2ce3461f0715a1f521a6c33c8e2e4a82.png","filename":"스크린샷 2018-01-30 오전 11.55.09.png","size":"133.25 KB"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"12:29 pm","serverfilename":"upload_99798d550bde0ec19d85dc95e0c51883.png","filename":"스크린샷 2018-01-30 오전 11.55.09.png","size":"133.25 KB"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"3:11 pm","serverfilename":"upload_53ab7613870b00522030ccfdb3f89a4d.png","filename":"스크린샷 2018-01-30 오전 11.55.09.png","size":"133.25 KB"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"3:22 pm","serverfilename":"upload_7dcefb45eb9efebc4b2bc693d51cf6b2.png","filename":"스크린샷 2018-01-30 오전 11.55.09.png","size":"133.25 KB"}
+{"username":"sjwiq7610","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"3:26 pm","serverfilename":"upload_521584d84dea0d44b568f90b42bffe0b.png","filename":"스크린샷 2018-01-21 오후 5.31.41.png","size":"25.29 KB"}
+{"msg":"어이 심재우씨","hasMsg":true,"username":"sjwiq7610","hasFile":false,"msgTime":"4:01 pm"}
+{"msg":"지도 보내요","hasMsg":true,"username":"sjwiq7610","hasFile":false,"msgTime":"4:01 pm"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"4:55 pm","serverfilename":"upload_cf045e51a421e5ef7e29695dfc57fbd8.png","filename":"스크린샷 2018-01-30 오전 11.55.09.png","size":"133.25 KB"}
+{"msg":"asdfasdfasdfa","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"4:56 pm"}
+{"username":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"4:56 pm","serverfilename":"upload_c417b4bc41f1aca4185c8cc445131fee.png","filename":"스크린샷 2018-01-30 오전 11.55.09.png","size":"133.25 KB"}
+{"msg":"sdaf","hasMsg":true,"username":"sjwiq200","hasFile":false,"msgTime":"4:59 pm"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"msgTime":"6:27 pm"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"msgTime":"6:28 pm"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"6:32 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=17726762542941574375","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"6:37 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"6:50 pm","serverfilename":"https://maps.google.com/?cid=990680809679552316.png"}
+{"msg":"https://maps.google.com/?cid=8270948055241986580","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"6:55 pm","serverfilename":"https://maps.google.com/?cid=8270948055241986580.png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"6:56 pm","serverfilename":"https://maps.google.com/?cid=990680809679552316.png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"6:57 pm","serverfilename":"https://maps.google.com/?cid=990680809679552316.png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"6:59 pm","serverfilename":"https://maps.google.com/?cid=990680809679552316.png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:06 pm","serverfilename":"https://maps.google.com/?cid=990680809679552316.png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:07 pm","serverfilename":"maphttps://maps.google.com/?cid=990680809679552316.png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:09 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=5586800432419540325","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:09 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B4%80%EC%95%85%EA%B5%AC+%EC%8B%A0%EB%A6%BC%EB%8F%99&ftid=0x357c9fdf5e85cf15:0xc9270b79eddc8878","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:13 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:13 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:14 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:17 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:17 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:17 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:19 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B4%80%EC%95%85%EA%B5%AC+%EC%8B%A0%EB%A6%BC%EB%8F%99&ftid=0x357c9fdf5e85cf15:0xc9270b79eddc8878","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:20 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=8270948055241986580","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:21 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:23 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:23 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:23 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:26 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B4%80%EC%95%85%EA%B5%AC+%EC%8B%A0%EB%A6%BC%EB%8F%99&ftid=0x357c9fdf5e85cf15:0xc9270b79eddc8878","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:27 pm","serverfilename":"undefined.png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:31 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=11665148476147156455","hasMsg":false,"username":"user05","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:33 pm","serverfilename":"map(user05).png"}
+{"msg":"https://maps.google.com/?q=%ED%94%84%EB%9E%91%EC%8A%A4+%ED%8C%8C%EB%A6%AC&ftid=0x47e66e1f06e2b70f:0x40b82c3688c9460","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:38 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:42 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:43 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=8270948055241986580","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:48 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:54 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:54 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:56 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:57 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"7:57 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:00 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:00 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?q=%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EB%8F%99%EC%9E%91%EA%B5%AC+%EC%8B%A0%EB%8C%80%EB%B0%A9%EB%8F%99&ftid=0x357c9fb156e36751:0x9f2a9c24d9c6fbef","hasMsg":false,"username":"user05","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:03 pm","serverfilename":"map(user05).png"}
+{"msg":"https://maps.google.com/?cid=3331547395147529846","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:07 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=13794272484453188284","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:08 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:09 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:10 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:11 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https://maps.google.com/?cid=990680809679552316:1517397468998","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:17 pm","serverfilename":"map(sjwiq200).png"}
+{"msg":"https","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:19 pm","serverfilename":"map(//maps.google.com/?cid=117235968806263715).png"}
+{"msg":"https","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:20 pm","serverfilename":"map(//maps.google.com/?cid=990680809679552316).png"}
+{"msg":"https://maps.google.com/?cid=12263132577768123273","hasMsg":false,"username":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:22 pm","serverfilename":"map(1517397734355).png"}
+{"msg":"https://maps.google.com/?cid=5347987469097873176","hasMsg":false,"username":"user06","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:23 pm","serverfilename":"map(1517397828454).png"}
+{"msg":"https://maps.google.com/?cid=11385488463490342153","hasMsg":false,"username":"user06","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:24 pm","serverfilename":"map(1517397876225).png"}

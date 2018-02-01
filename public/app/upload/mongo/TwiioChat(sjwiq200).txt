@@ -1,0 +1,18 @@
+{"msg":"안녕하세요","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"11:56 am"}
+{"msg":"12학번 심재우입니다.","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"11:56 am"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"11:57 am","serverfilename":"upload_c04d244daa57daa1db250b34f84cc032.png","filename":"upload_2ce3461f0715a1f521a6c33c8e2e4a82.png","size":"133.25 KB"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"userName":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"11:57 am","serverfilename":"map(1517453833129).png"}
+{"msg":"안녕하세요!!!","hasMsg":true,"userName":"sjwiq7610","hasFile":false,"msgTime":"11:57 am"}
+{"msg":"테스트!","hasMsg":true,"userName":"sjwiq7610","hasFile":false,"msgTime":"11:57 am"}
+{"userName":"sjwiq7610","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"11:57 am","serverfilename":"upload_0f027dcb88df7f44fb6ab9b0d993d37a.png","filename":"upload_2ce3461f0715a1f521a6c33c8e2e4a82.png","size":"133.25 KB"}
+{"msg":"","hasMsg":false,"userName":"sjwiq7610","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"11:58 am","serverfilename":"map(1517453914572).png"}
+{"userName":"sjwiq7610","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"11:59 am","serverfilename":"upload_80ddbad2ac4bd4bb7da9f4f1ac0cbfd8.png","filename":"image.png","size":"451.73 KB"}
+{"msg":"https://maps.google.com/?cid=990680809679552316","hasMsg":false,"userName":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"12:00 pm","serverfilename":"map(1517454026236).png"}
+{"msg":"https://maps.google.com/?cid=8270948055241986580","hasMsg":false,"userName":"user05","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"12:03 pm","serverfilename":"map(1517454208484).png"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"12:03 pm","serverfilename":"upload_1a061bae40b1f47b69836252f11026c2.jpeg","filename":"이력서사진.jpeg","size":"28.54 KB"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"12:07 pm","serverfilename":"upload_4f7203b8ebaabec0f421610515915598.png","filename":"image.png","size":"451.73 KB"}
+{"msg":"asdasdfasf","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"6:59 pm"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"6:59 pm","serverfilename":"upload_62113820a23791208b60f779a9a2b322.png","filename":"image.png","size":"451.73 KB"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"7:00 pm","serverfilename":"upload_3cc5f57d164f1e38433aaa2d6d6649eb.png","filename":"image.png","size":"451.73 KB"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"7:00 pm","serverfilename":"upload_07d69a22725eaaa3c3513e37d1a4ea92.png","filename":"upload_27175624fa31c5aabfe5c97a1b6d5d09.png","size":"25.29 KB"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"7:00 pm","serverfilename":"upload_d73c8701d75865663401f32614efcb27.png","filename":"image.png","size":"451.73 KB"}
