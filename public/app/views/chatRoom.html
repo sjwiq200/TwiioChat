@@ -40,7 +40,8 @@
                           <div>
                             <div ng-class="{'attachment-icon-right' : messege.ownMsg, 'attachment-icon-left' : !messege.ownMsg}">
                               <a href ng-click="openClickImage(messege)" ng-show="messege.showme" >
-                                <img id="{{messege.dwid}}" width="50" height="50" ng-src="{{messege.dwimgsrc}}" alt="Open Image"></a> <!-- Open Icon -->
+                                <!--<img id="{{messege.dwid}}" width="50" height="50" ng-src="{{messege.dwimgsrc}}" alt="Open Image"></a> &lt;!&ndash; Open Icon &ndash;&gt;-->
+                                <img id="{{messege.dwid}}" width="50" height="50" ng-src="{{messege.serverfilename}}" alt="Open Image"></a>
 
                               <a ng-href="{{messege.serverfilename}}" data-lightbox="{{messege.dwid}}" data-title="{{messege.filename}}" ng-hide="messege.showme">
                                 <img ng-class="{'multiple-borders-white' : messege.ownMsg,'multiple-borders-black' : !messege.ownMsg}" id="{{messege.dwid+1}}" width="90" height="70" ng-src="{{messege.serverfilename}}" alt="Image File"> <!-- Image -->
