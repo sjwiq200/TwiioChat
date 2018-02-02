@@ -2,14 +2,14 @@ var App = angular.module('ChatRoom',['ngResource','ngRoute','ngStorage','socket.
 .run(["$rootScope", function ($rootScope){
 
     // $rootScope.baseUrl = 'http://218.156.17.126:8282'; //Application URL
-    // $rootScope.baseUrl = 'http://192.168.0.29:8282'; //Application URL
-    $rootScope.baseUrl = 'http://localhost:8282'; //Application URL
+    $rootScope.baseUrl = 'http://192.168.0.29:8282'; //Application URL
+    // $rootScope.baseUrl = 'http://localhost:8282'; //Application URL
 }]);
 App.config(function ($routeProvider, $socketProvider){
 
     // $socketProvider.setConnectionUrl('http://218.156.17.126:8282'); // Socket URL
-    // $socketProvider.setConnectionUrl('http://192.168.0.29:8282'); // Socket URL
-    $socketProvider.setConnectionUrl('http://localhost:8282'); // Socket URL
+    $socketProvider.setConnectionUrl('http://192.168.0.29:8282'); // Socket URL
+    // $socketProvider.setConnectionUrl('http://localhost:8282'); // Socket URL
 
 	$routeProvider	// AngularJS Routes
 	/*.when('/v1/', {
@@ -29,7 +29,7 @@ App.config(function ($routeProvider, $socketProvider){
         controller: 'loginCtrl'
 	})
 	.when('/googleMap',{
-		templateUrl:'./googleMap.html',
+		templateUrl:'./googleMap.html'
 
 	})
 	.otherwise({

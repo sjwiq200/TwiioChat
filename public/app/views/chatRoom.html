@@ -38,7 +38,7 @@
                         <!-- Image File Open -->
                         <div ng-class="{'filename' : true,'chat-msg' : true}" ng-show="messege.isImageFile">
                           <div>
-                            <div ng-class="{'attachment-icon-right' : messege.ownMsg, 'attachment-icon-left' : !messege.ownMsg}">
+                            <div ng-class="{'attachment-icon-right' : messege.ownMsg, 'attachment-icon-left' : !messege.ownMsg}" >
                               <a href ng-click="openClickImage(messege)" ng-show="messege.showme" >
                                 <!--<img id="{{messege.dwid}}" width="50" height="50" ng-src="{{messege.dwimgsrc}}" alt="Open Image"></a> &lt;!&ndash; Open Icon &ndash;&gt;-->
                                 <img id="{{messege.dwid}}" width="50" height="50" ng-src="{{messege.serverfilename}}" alt="Open Image"></a>
