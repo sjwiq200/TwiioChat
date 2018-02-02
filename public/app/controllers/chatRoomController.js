@@ -52,7 +52,7 @@ angular.module('Controllers')
         $scope.route = $route;
         $scope.mapUrl = "";
         $scope.nodePath = "http://192.168.0.29:8282/";
-        $Scope.tomcatPath ="http://192.168.0.29:8080/";
+        $scope.tomcatPath ="http://192.168.0.29:8080/";
 
 
         // redirection if user is not logged in.
@@ -104,7 +104,7 @@ angular.module('Controllers')
         $scope.googleMap = function(){
             // var childMap = window.open("http://192.168.0.29:8282/googleMap.html",'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');
             // var childMap = window.open("http://localhost:8282/googleMap.html",'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');
-            var childMap = window.open($scope.nodePath+googleMap.html",'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');
+            var childMap = window.open($scope.nodePath+"googleMap.html",'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');
             console.log("googlemap ==>"+$scope.userName);
 
         };
