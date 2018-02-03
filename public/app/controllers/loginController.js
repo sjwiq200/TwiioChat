@@ -22,6 +22,7 @@ angular.module('Controllers',[])
 	$scope.userName = "";
 	$scope.userName = $routeParams.userName;
 	$scope.roomKey = $routeParams.roomKey;
+	$scope.userNo = $routeParams.userNo;
 
 
 	// redirection if user logged in.
@@ -35,12 +36,13 @@ angular.module('Controllers',[])
 		console.log($scope.userName);
 		if ($scope.userName.length <= 20) {
 			if($scope.userName){
-				$socket.emit('new user',{userName : $scope.userName, userAvatar : $scope.userAvatar, roomKey : $scope.roomKey},function(data){
+				$socket.emit('new user',{userName : $scope.userName, userAvatar : $scope.userAvatar, roomKey : $scope.roomKey, userNo:$scope.userNo},function(data){
 					if(data.success == true){	// if nickname doesn't exists
 						$rootScope.userName = $scope.userName;
 						$rootScope.userAvatar = $scope.userAvatar;
 						$rootScope.loggedIn = true;
 						$rootScope.roomKey = $scope.roomKey;
+						$rootScope.userNo = $scope.userNo;
 						$location.path('/v1/'+$scope.roomKey);
 					}else{		// if nickname exists
 						$scope.errMsg = "Use different nickname.";

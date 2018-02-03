@@ -141,6 +141,7 @@ ios.on('connection', function(socket){
 				socket.userName = data.userName;
 				socket.userAvatar = data.userAvatar;
 				socket.roomKey = data.roomKey;
+				socket.userNo = data.userNo;
 				nickname[data.userName] = socket;
 			}
 		socket.join(data.roomKey);
@@ -159,7 +160,7 @@ ios.on('connection', function(socket){
             // console.log('client: '+ clientId); //Seeing is believing
             var client_socket = ios.sockets.connected[clientId];//Do whatever you want with this
 			// console.log("client2==>"+client_socket.userName);
-            temp1 = {"userName": client_socket.userName, "userAvatar":client_socket.userAvatar, "roomKey":client_socket.roomKey};
+            temp1 = {"userName": client_socket.userName, "userAvatar":client_socket.userAvatar, "roomKey":client_socket.roomKey, "userNo":client_socket.userNo};
             online_member.push(temp1);
         }
 

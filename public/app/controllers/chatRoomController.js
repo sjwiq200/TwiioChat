@@ -51,8 +51,10 @@ angular.module('Controllers')
         $scope.messeges = [];
         $scope.route = $route;
         $scope.mapUrl = "";
-        $scope.nodePath = "http://192.168.0.29:8282/";
-        $scope.tomcatPath ="http://192.168.0.29:8080/";
+        // $scope.nodePath = "http://192.168.0.29:8282/";
+        // $scope.tomcatPath ="http://192.168.0.29:8080/";
+        $scope.nodePath = "http://localhost:8282/";
+        $scope.tomcatPath ="http://localhost:8080/";
 
 
         // redirection if user is not logged in.
@@ -62,12 +64,25 @@ angular.module('Controllers')
 
 
 // ================================== Online Members List ===============================
-        $socket.emit('get-online-members',{userName : $scope.userName, roomKey: $scope.roomKey},function(data){
+        $socket.emit('get-online-members',{userName : $scope.userName, roomKey: $scope.roomKey, userNo : $scope.userNo},function(data){
         });
         $socket.on("online-members", function(data){
             console.log("here is socket.on(online-member) ==>" +JSON.stringify(data));
             $scope.users = data;
         });
+
+// ================================== Profile Click Event ===============================
+
+        $scope.getProfile = function(userNo){
+            console.log("here is a get Profile"+userNo);
+            window.open($scope.tomcatPath+"room/getProfile/"+userNo,'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');;
+        };
+
+// ================================== listFriend Click Event ===============================
+        $scope.listFriend = function(userNo){
+            console.log("here is a listFriend"+userNo);
+            window.open($scope.tomcatPath+"room/listFrined/"+userNo,'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');;
+        };
 
 // ================================== MongoDB History ===============================
         $socket.emit('history request', {userName : $scope.userName, roomKey: $scope.roomKey}, function() {

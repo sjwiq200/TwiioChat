@@ -190,10 +190,11 @@
               <div class="direct-chat-messages ol-members">
                 <ul class='contacts-list'>
                   <li ng-repeat="user in users">
-                    <a href>
+                    <a href ng-click="getProfile(user.userNo)">
+                      <input type="hidden" id="profileUserNo" ng-model="profileUserNo" value="{{user.userNo}}">
                       <img class='contacts-list-img' ng-src='app/css/dist/img/{{user.userAvatar}}'/>
                       <div class='contacts-list-info'>
-                        <span class="ol-memeber-name" style="line-height:2.6; padding:5px; font-weight : 600; color : #333;">{{ user.userName }}</span>
+                        <span class="ol-memeber-name" style="line-height:2.6; padding:5px; font-weight : 600; color : #333;">{{user.userName }}</span>
                       </div><!-- /.contacts-list-info -->
                     </a>
                   </li><!-- End Contact Item -->
@@ -204,6 +205,7 @@
 
           </div><!-- /.box -->
           <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="popupSchedule()">Schedule FIX</button>
+          <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="listFriend(userNo)">listFriend</button>
         </div>
       </div>
     </section><!-- /.content -->
