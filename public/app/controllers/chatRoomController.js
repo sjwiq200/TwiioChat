@@ -51,6 +51,7 @@ angular.module('Controllers')
         $scope.messeges = [];
         $scope.route = $route;
         $scope.mapUrl = "";
+        $scope.schedule = "";
         // $scope.nodePath = "http://192.168.0.29:8282/";
         // $scope.tomcatPath ="http://192.168.0.29:8080/";
         $scope.nodePath = "http://localhost:8282/";
@@ -79,13 +80,51 @@ angular.module('Controllers')
         };
 
 // ================================== listFriend Click Event ===============================
-        $scope.listFriend = function(userNo){
-            console.log("here is a listFriend"+userNo);
-            window.open($scope.tomcatPath+"room/listFrined/"+userNo,'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');;
+        $scope.listFriend = function(roomKey){
+            console.log("here is a listFriend");
+            window.open($scope.tomcatPath+"room/listFriend/"+roomKey,'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');;
         };
 
+// ================================== listRoomUser Click Event ===============================
+        $scope.listRoomUser = function(roomKey){
+            console.log("here is a listRoomUser"+roomKey);
+            window.open($scope.tomcatPath+"room/listRoomUser/"+roomKey,'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');;
+        };
+
+// ================================== Schedule Check Event ===============================
+        $socket.emit('schedule check',{roomKey : $scope.roomKey},function(){
+        });
+
+        $socket.on('schedule', function(schedule){
+            console.log("schedule Check ==>" + JSON.stringify(schedule));
+            $scope.schedule = schedule.schedule;
+
+            /*var html = '<p id="alert">'+ '(Schedule) - title : '+schedule.schedule.scheduleTitle+ ', date : '+schedule.schedule.scheduleDate+', Address : '+schedule.schedule.scheduleAddress +'</p>';
+            if ($( ".chat-box" ).has( "p" ).length < 1) {
+                $(html).hide().prependTo(".chat-box").fadeIn(1500);
+                $('#alert').delay(1000).fadeOut('slow', function(){
+                    $('#alert').remove();
+                });
+            };*/
+
+        });
+// ================================== Schedule Popup ===============================
+        $scope.popupSchedule = function(){
+            // window.open("http://localhost:8080/schedule/addSchedule/"+$rootScope.roomKey,'TwiioChat','location=no,menubar=no,resizable=yes,status=no,width=500,height=500,top=100,left=100');
+            window.open($scope.tomcatPath+"schedule/addSchedule/"+$rootScope.roomKey,'TwiioChat','location=no,menubar=no,resizable=yes,status=no,width=500,height=500,top=100,left=100');
+        };
+
+        $scope.$watch('schedule', function () {
+            console.log("here is a afterAddSchedule");
+            $socket.emit('schedule check',{roomKey : $scope.roomKey},function(){
+            });
+        });
+// ================================== add Report ===============================
+        $scope.addReport = function(roomKey){
+            window.open($scope.tomcatPath+"room/addReport/"+roomKey,'TwiioChat','location=no,menubar=no,resizable=yes,status=no,width=500,height=500,top=100,left=100');
+        };
 // ================================== MongoDB History ===============================
-        $socket.emit('history request', {userName : $scope.userName, roomKey: $scope.roomKey}, function() {
+        $socket.emit('history request', {userName : $scope.userName, roomKey: $scope.roomKey, isSchedule : false}, function() {
         });
         $socket.on('history response', function(data){
 
@@ -129,12 +168,6 @@ angular.module('Controllers')
             var dateString = formatAMPM(new Date());
             var abc = $scope.mapUrl.split("twiio");
             var serverFileName = 'map('+abc[1]+').png';
-
-
-            console.log("here is a addMap1==>"+$scope.mapUrl);
-            console.log("here is a addMap2==>"+data);
-            console.log(abc[0]);
-            console.log(abc[1]);
 
             $socket.emit("send-message",{ userName : $rootScope.userName, userAvatar : $rootScope.userAvatar, msg : abc[0], hasMsg : false , hasFile : true , msgTime : dateString, roomKey : $rootScope.roomKey, isMapFile : true, serverfilename : serverFileName, istype : 'map', isImageFile : false}, function(data){
                 //delivery report code goes here
@@ -192,11 +225,7 @@ angular.module('Controllers')
             console.log("here is a popupMap"+JSON.stringify(msg));
             window.open(msg,'TwiioChat','location=no,menubar=no,resizable=no,status=yes,width=500,height=500,top=100,left=100');
         };
-// ================================== Schedule ===============================
-        $scope.popupSchedule = function(){
-            // window.open("http://localhost:8080/schedule/addSchedule/"+$rootScope.roomKey,'TwiioChat','location=no,menubar=no,resizable=yes,status=no,width=500,height=500,top=100,left=100');
-            window.open($scope.tomcatPath+"schedule/addSchedule/"+$rootScope.roomKey,'TwiioChat','location=no,menubar=no,resizable=yes,status=no,width=500,height=500,top=100,left=100');
-        }
+
 
 // ================================== Common Functions ==================================
         // device/desktop detection

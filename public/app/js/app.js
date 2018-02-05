@@ -24,7 +24,7 @@ App.config(function ($routeProvider, $socketProvider){
 		templateUrl: 'app/views/chatRoom.html',
 		controller: 'chatRoomCtrl'
 	})
-	.when('/:roomKey/:userName/:userNo', {
+	.when('/:roomKey/:userName/:userNo/:master', {
         templateUrl: 'app/views/login.html',
         controller: 'loginCtrl'
 	})

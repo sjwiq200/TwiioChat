@@ -8,7 +8,8 @@
           <div class="box box-info direct-chat direct-chat direct-chat-info" >
 
             <div class="box-header with-border">
-              <h3 class="box-title">Twii Chat</h3>
+              <h3 class="box-title" >Twii Chat</h3>
+              <h3 class="box-title" ng-show="schedule.isSchedule">(Schedule) - title : {{schedule.scheduleTitle}}, date : {{schedule.scheduleDate}}, Address : {{schedule.scheduleAddress}}</h3>
               <div class="box-tools pull-right">
                 <!-- Google Map -->
                 <button class="btn btn-box-tool mobile" data-widget="" ngf-select ng-click="googleMap()"><i class="glyphicon glyphicon-globe"></i></button>
@@ -204,8 +205,10 @@
             </div><!-- /.box-body -->
 
           </div><!-- /.box -->
-          <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="popupSchedule()">Schedule FIX</button>
-          <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="listFriend(userNo)">listFriend</button>
+          <button class="btn btn-flat" style="background-color: #56B1BF;" ng-show="userNo == master"  ng-click="popupSchedule()">Schedule FIX</button>
+          <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="listFriend(roomKey)">listFriend</button>
+          <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="listRoomUser(roomKey)">listRoomUser</button>
+          <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="addReport(roomKey)">addReport</button>
         </div>
       </div>
     </section><!-- /.content -->

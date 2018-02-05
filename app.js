@@ -76,6 +76,12 @@ var chatSchema = mongoose.Schema({
     isMapFile : Boolean
 
 });
+var scheduleSchema = mongoose.Schema({
+    roomKey : String,
+    scheduleTitle : String,
+    scheduleDate : String,
+    scheduleAddress : String
+});
 
 
 
@@ -150,7 +156,7 @@ ios.on('connection', function(socket){
 
 
 
-	// sending online members list
+// ================================== Online Members List ===============================
 	socket.on('get-online-members', function(data){
 
 		var online_member = [];
@@ -192,7 +198,7 @@ ios.on('connection', function(socket){
 
 	});
 
-	//History In MongoDB
+// ================================== MongoDB History ===============================
     socket.on('history request', function(data) {
         var Chat = mongoose.model('Chat',chatSchema,'chat'+data.roomKey);
         var history = [];
@@ -233,8 +239,29 @@ ios.on('connection', function(socket){
             });
         });
     });
+// ================================== Schedule Check Event ===============================
+    socket.on('schedule check', function(data, callback){
+        var Schedule = mongoose.model('Schedule',scheduleSchema,'schedules');
+        Schedule.findOne({'roomKey' : data.roomKey},function(err, result){
+            if(result != null){
+                var dbData = {
+                    isSchedule : true,
+                    scheduleTitle : result.scheduleTitle,
+                    scheduleDate : result.scheduleDate,
+                    scheduleAddress : result.scheduleAddress
+                };
+            }else{
+                var dbData = {
+                    isSchedule : false
+                }
+            }
 
-	// sending new message
+            socket.emit('schedule',{
+                schedule : dbData
+            });
+        })
+    });
+// ================================== sending new message ==================================
 	socket.on('send-message', function(data, callback){
         var Chat = mongoose.model('Chat',chatSchema,'chat'+data.roomKey);
 		console.log('here is a send-message ==>' + JSON.stringify(data));
@@ -308,7 +335,7 @@ ios.on('connection', function(socket){
 		}
 	});
 
-	// disconnect user handling
+// ================================== disconnect user handling ==================================
 	socket.on('disconnect', function () {
 		delete nickname[socket.userName];
 		online_member = [];
@@ -324,7 +351,7 @@ ios.on('connection', function(socket){
    	});
 });
 
-// route for uploading images asynchronously
+// ================================== route for uploading images asynchronously ==================================
 app.post('/v1/uploadImage',function (req, res){
 
 	var imgdatetimenow = Date.now();

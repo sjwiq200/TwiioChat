@@ -19,10 +19,11 @@ angular.module('Controllers',[])
 	$scope.userAvatar = "Avatar1.jpg";
 	$scope.isErrorReq = false;
 	$scope.isErrorNick = false;
-	$scope.userName = "";
+	// $scope.userName = "";
 	$scope.userName = $routeParams.userName;
 	$scope.roomKey = $routeParams.roomKey;
 	$scope.userNo = $routeParams.userNo;
+	$scope.master = $routeParams.master;
 
 
 	// redirection if user logged in.
@@ -43,6 +44,7 @@ angular.module('Controllers',[])
 						$rootScope.loggedIn = true;
 						$rootScope.roomKey = $scope.roomKey;
 						$rootScope.userNo = $scope.userNo;
+						$rootScope.master = $scope.master;
 						$location.path('/v1/'+$scope.roomKey);
 					}else{		// if nickname exists
 						$scope.errMsg = "Use different nickname.";
@@ -51,17 +53,19 @@ angular.module('Controllers',[])
 						$scope.printErr($scope.errMsg);
 					}
 				});
-			}else{		// blanck nickname
+			}
+			/*else{		// blanck nickname
 				$scope.errMsg = "Enter a nickname.";
 				$scope.isErrorReq = true;
 				$scope.printErr($scope.errMsg);
-			}
-		}else{		// nickname greater than limit
+			}*/
+		}
+		/*else{		// nickname greater than limit
 			$scope.errMsg = "Nickname exceed 20 charachters.";
 			$scope.isErrorNick = true;
 			$scope.isErrorReq = true;
 			$scope.printErr($scope.errMsg);
-		}
+		}*/
 	// }
 
 	$scope.printErr = function(msg){	// popup for error message
