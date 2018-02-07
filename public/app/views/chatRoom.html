@@ -9,8 +9,16 @@
           <div class="box box-primary direct-chat" style="border-top-color: rgba(215, 58, 49, 0.8)"  >
 
             <div class="box-header with-border">
-              <h3 class="box-title" >방제목 - {{roomName}}</h3></br>
-              <h3 class="box-title" ng-show="schedule.isSchedule">(Schedule) - title : {{schedule.scheduleTitle}}, date : {{schedule.scheduleDate}}, Address : {{schedule.scheduleAddress}}</h3>
+              <div class="col-sm-5">
+                <h2 class="box-title pull-left" >{{roomName}}</h2></br>
+              </div>
+              <div class="col-sm-1">
+                <img class="pull-left box-schedule-img" src="app/css/dist/img/calendar.png" style="width: 80%;height: 80%;">
+              </div>
+              <div class="col-sm-6">
+                <h1 class="box-schedule pull-left" ng-show="schedule.isSchedule"> date : {{schedule.scheduleDate}}</h1></br>
+                <h1 class="box-schedule pull-left" ng-show="schedule.isSchedule"> Address : {{schedule.scheduleAddress}}</h1>
+              </div>
               <div class="box-tools pull-right">
                 <!-- plus Function-->
                 <button class="btn btn-box-tool mobile" ng-click="plusFunction()" data-toggle="tooltip" title="추가기능"><i class="glyphicon glyphicon-plus"></i></button>
@@ -148,11 +156,11 @@
                   <div class="plus-function-toggle">
 
 
-                    <button class="btn btn-flat" style="background-color: #56B1BF;" ng-show="userNo == master"  ng-click="popupSchedule()">Schedule FIX</button>
+                    <button class="btn btn-flat" ng-show="userNo == master"  ng-click="popupSchedule()"><img ng-src="app/css/dist/img/location.png" style="width: 35px;height: 35px;"></button>
 
-                    <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="listFriend(roomKey)">listFriend</button>
-                    <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="listRoomUser(roomKey)">listRoomUser</button>
-                    <button class="btn btn-flat" style="background-color: #56B1BF;"  ng-click="addReport(roomKey)">addReport</button>
+                    <button class="btn btn-flat" ng-click="listFriend(roomKey)"><img ng-src="app/css/dist/img/party.png" style="width: 35px;height: 35px;"></button>
+                    <button class="btn btn-flat" ng-click="listRoomUser(roomKey)"><img ng-src="app/css/dist/img/group-button.png" style="width: 35px;height: 35px;"></button>
+                    <button class="btn btn-flat" ng-click="addReport(roomKey)"><img ng-src="app/css/dist/img/warning.png" style="width: 35px;height: 35px;"></button>
 
                   </div>
                 </div>
@@ -184,39 +192,38 @@
               <div class="chat-box"></div>
             </div><!-- /.box-body -->
             <div class="box-footer">
+
               <div class="box-tools pull-right desktop">
                 <!-- Plus Button -->
-                <button class="btn btn-flat" ng-click="plusFunction()" data-toggle="tooltip" title="추가기능"><img ng-src="app/css/dist/img/plus.png" style="border: 0"></button>
-                  <!--<i class="glyphicon glyphicon-plus"></i>-->
-
+                <button class="btn btn-flat" ng-click="plusFunction()" data-toggle="tooltip" title="추가기능" style="border-radius:6px;margin-left: 2px;"><i class="glyphicon glyphicon-plus"></i></button>
 
               </div>
 
               <div class="box-tools pull-right desktop">
                 <!-- Google Map Button -->
-                <button class="btn btn-flat" ng-click="googleMap()" style="background: rgba(215, 58, 49, 0.8);"><i class="glyphicon glyphicon-globe"></i></button>
+                <button class="btn btn-flat" ng-click="googleMap()" style="border-radius:6px;margin-left: 1px;"><i class="glyphicon glyphicon-globe"></i></button>
                 <input type="text" id="map-url" class="hidden" ng-model="mapUrl" ng-model-change ng-click="addMap(mapUrl)" value="">
                 <input type="text" id="user-name" class="hidden" value="{{ userName }}">
               </div>
 
               <div class="box-tools pull-right desktop">
                 <!-- EXPORT Button -->
-                <button class="btn btn-flat" ng-click="mongoExport()" style="background: rgba(215, 58, 49, 0.8);"><i class="glyphicon glyphicon-save-file"></i></button>
+                <button class="btn btn-flat" ng-click="mongoExport()" style="border-radius:6px;margin-left: 2px;"><i class="glyphicon glyphicon-save-file"></i></button>
               </div>
               <!-- download mongoDB.txt -->
               <a id ="mongoDB" class="decs-text hidden-link" href="TwiioChat({{ userName }}).txt" download="TwiioChat({{ userName }}).txt"><i>Hidden Link</i></a>
 
               <div class="box-tools pull-right desktop">
                 <!-- Any File Select Button -->
-                <button class="btn btn-flat" data-widget="" ngf-select ng-model="Files" style="background: rgba(215, 58, 49, 0.8);"><i class="glyphicon glyphicon-paperclip"></i></button>
+                <button class="btn btn-flat" data-widget="" ngf-select ng-model="Files" style="border-radius:6px;margin-left: 1px;"><i class="glyphicon glyphicon-paperclip"></i></button>
               </div>
 
               <!-- Text message  -->
               <form action="" method="post">
                 <div class="input-group">
-                  <input type="text" name="message" placeholder="Type Message ..." ng-class="{'form-control': true, 'has-error':isMsgBoxEmpty}" ng-model="chatMsg" ng-change="isMsgBoxEmpty=false" ng-enter="sendMsg()" ng-focus="setFocus" focus-me="setFocus"/>
+                  <input type="text" name="message" placeholder="Type Message ..." ng-class="{'form-control': true, 'has-error':isMsgBoxEmpty}" ng-model="chatMsg" ng-change="isMsgBoxEmpty=false" ng-enter="sendMsg()" ng-focus="setFocus" focus-me="setFocus" style="border-radius:6px; padding-left: 2px;"/>
                   <span class="input-group-btn">
-                      <button type="button" class="btn  btn-flat" ng-click="sendMsg()" style="background: rgba(215, 58, 49, 0.8)">Send</button>
+                      <button type="button" class="btn  btn-flat" ng-click="sendMsg()" style="border-radius:6px;margin-left: 1px;">Send</button>
                     </span>
                 </div>
               </form>

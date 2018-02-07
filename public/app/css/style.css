@@ -148,7 +148,7 @@ html,body{height:100%;}
 plus Function Toggle Component
  */
 #plusFunctionToggle{
-	background-color: rgba(255,255,255,0.6);
+	/*background-color: rgba(255,255,255,0.6);*/
 	overflow: hidden;
 }
 .plus_function_inner {

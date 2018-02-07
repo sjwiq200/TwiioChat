@@ -1272,7 +1272,7 @@ a:focus {
 }
 /* Input group */
 .input-group .input-group-addon {
-  border-radius: 0px;
+  border-radius: 6px;
   border-color: #d2d6de;
   background-color: #fff;
 }
@@ -1711,7 +1711,19 @@ a:focus {
 .box-header > .ion,
 .box-header .box-title {
   display: inline-block;
-  font-size: 18px;
+  font-size: 24px;
+  margin: 0;
+  line-height: 1;
+  margin-top: 2%;
+}
+.box-header .box-schedule-img {
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+}
+.box-header .box-schedule {
+  display: inline-block;
+  font-size: 16px;
   margin: 0;
   line-height: 1;
 }
@@ -1788,7 +1800,9 @@ a:focus {
   border-bottom-left-radius: 3px;
   border-top: 1px solid #f4f4f4;
   padding: 10px;
-  background-color: #ffffff;
+
+  /*background-color: #ffffff;*/
+  background-color: #56B1BF;
 }
 .chart-legend {
   margin: 10px 0;
@@ -2640,6 +2654,8 @@ plus Function Toggle Component
 /*
 ============================
  */
+
+
 .direct-chat-msg,
 .direct-chat-text {
   display: block;
