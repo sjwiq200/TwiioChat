@@ -46,12 +46,13 @@ angular.module('Controllers',[])
 						$rootScope.userNo = $scope.userNo;
 						$rootScope.master = $scope.master;
 						$location.path('/v1/'+$scope.roomKey);
-					}else{		// if nickname exists
+					}
+					/*else{		// if nickname exists
 						$scope.errMsg = "Use different nickname.";
 						$scope.isErrorNick = true;
 						$scope.isErrorReq = true;
 						$scope.printErr($scope.errMsg);
-					}
+					}*/
 				});
 			}
 			/*else{		// blanck nickname

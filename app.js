@@ -83,6 +83,10 @@ var scheduleSchema = mongoose.Schema({
     scheduleAddress : String
 });
 
+var roomSchema = mongoose.Schema({
+    roomKey : String,
+    roomName : String
+})
 
 
 
@@ -259,7 +263,14 @@ ios.on('connection', function(socket){
             socket.emit('schedule',{
                 schedule : dbData
             });
-        })
+        });
+        var Room = mongoose.model('room',roomSchema);
+        Room.findOne({'roomKey' : data.roomKey},function(err,result){
+            socket.emit('room name',{
+                roomName : result.roomName
+            });
+
+        });
     });
 // ================================== sending new message ==================================
 	socket.on('send-message', function(data, callback){

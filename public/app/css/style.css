@@ -17,7 +17,6 @@ html,body{height:100%;}
 	width : 65px;
 	border: 3px solid #fff;
 	box-shadow: inset 0 0 5px tomato, 0 0 5px black;
-
 }
 .login-box-body{
 	width: 360px;
@@ -57,11 +56,14 @@ html,body{height:100%;}
 .box-tools{
 	margin-left: 0.1em ;
 }
+/*배경색*/
 .content-wrapper{
-	 background-color: transparent; 
+	 background-color: transparent;
 }
+/*채팅 박스*/
 .direct-chat-messages{
 	height : 450px;
+	/*background-color: #00a157;*/
 }
 .attachment-icon-right{
 	float : right;
@@ -142,6 +144,39 @@ html,body{height:100%;}
 	background-color: rgba(255,255,255,0.6);
 	overflow: hidden;
 }
+/*
+plus Function Toggle Component
+ */
+#plusFunctionToggle{
+	background-color: rgba(255,255,255,0.6);
+	overflow: hidden;
+}
+.plus_function_inner {
+	position: absolute;
+	/*top: 0;*/
+	bottom: 0;
+	right: -100%;
+	/*background: #6DAD53;*/
+	width: 50%;
+	height: 8%;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	text-align: right;
+	-webkit-border-radius: 0 0 5px 0;
+	-moz-border-radius: 0 0 5px 0;
+	border-radius: 0 0 5px 0;
+	/*background-color: #fff;*/
+	/*border : 1px solid rgba(0,0,0,0.2);*/
+	overflow: auto;
+}
+.plus_function_inner_trans {
+	right : 0;
+}
+/*
+====================================
+ */
 .chat-msg{
 	margin : 0px;
 }
@@ -166,6 +201,62 @@ html,body{height:100%;}
 	font-size : 20px; 
 	color : #333; 
 	float : right;
+}
+
+/*============================ Sreen size 1191px ============================*/
+@media screen and (max-width: 1191px) {
+
+	.plus_function_inner_trans {
+		text-align: right;
+		right:0;
+
+	}
+}
+/*============================ Sreen size 991px ============================*/
+@media screen and (max-width: 991px) {
+	.login-box-body {
+		width: 500px;
+		margin: 0px auto;
+	}
+
+	.avatar {
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		margin-bottom: 0.5em;
+		margin-left: 0.50em;
+	}
+
+	.avatar-thumb {
+		width: 24%;
+		display: inline-block;
+	}
+
+	.avatar-selected {
+		height: 50px;
+		width: 50px;
+		border: 3px solid #fff;
+		box-shadow: inset 0 0 5px tomato, 0 0 5px black;
+	}
+
+	.toggle-contact-icon {
+		display: block;
+	}
+
+	.toggle-contact-list {
+		display: none;
+	}
+
+	.plus_function_inner {
+
+		width: 100%;
+
+	}
+
+	.plus_function_inner_trans {
+		right:0;
+
+	}
 }
 /*============================ Sreen size 768px ============================*/
 @media screen and (max-width: 767px) {
@@ -196,6 +287,10 @@ html,body{height:100%;}
 .toggle-contact-list{
 	display: none;
 }
+.plus_function_inner_trans {
+	right:0;
+
+}
 }
 /*============================ Sreen size 480px ============================*/
 @media screen and (max-width: 479px) {
@@ -208,5 +303,9 @@ html,body{height:100%;}
 }
 .desktop{
 	display: none;
+}
+
+.plus_function_inner_trans {
+	right:0;
 }
 }

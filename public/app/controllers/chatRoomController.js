@@ -52,6 +52,7 @@ angular.module('Controllers')
         $scope.route = $route;
         $scope.mapUrl = "";
         $scope.schedule = "";
+        $scope.roomName = "";
         // $scope.nodePath = "http://192.168.0.29:8282/";
         // $scope.tomcatPath ="http://192.168.0.29:8080/";
         $scope.nodePath = "http://localhost:8282/";
@@ -62,7 +63,21 @@ angular.module('Controllers')
         /*if(!$rootScope.loggedIn){
             $location.path('/v1/');
         }*/
-
+// ================================== Plus Function Event ===============================
+        $scope.plusValue = true;
+        $scope.plusFunction = function(){
+          console.log("here is a plusFunction");
+            $scope.plusValue = $scope.plusValue === false ? true: false;
+            if(!$scope.plusValue){
+                if(!angular.element(document.querySelector("#plusFunctionToggle")).hasClass("plus_function_inner_trans")){
+                    angular.element(document.querySelector("#plusFunctionToggle")).addClass("plus_function_inner_trans");
+                }
+            }else{
+                if (angular.element(document.querySelector("#plusFunctionToggle")).hasClass("plus_function_inner_trans")) {
+                    angular.element(document.querySelector("#plusFunctionToggle")).removeClass("plus_function_inner_trans");
+                }
+            }
+        };
 
 // ================================== Online Members List ===============================
         $socket.emit('get-online-members',{userName : $scope.userName, roomKey: $scope.roomKey, userNo : $scope.userNo},function(data){
@@ -96,7 +111,6 @@ angular.module('Controllers')
         });
 
         $socket.on('schedule', function(schedule){
-            console.log("schedule Check ==>" + JSON.stringify(schedule));
             $scope.schedule = schedule.schedule;
 
             /*var html = '<p id="alert">'+ '(Schedule) - title : '+schedule.schedule.scheduleTitle+ ', date : '+schedule.schedule.scheduleDate+', Address : '+schedule.schedule.scheduleAddress +'</p>';
@@ -108,6 +122,11 @@ angular.module('Controllers')
             };*/
 
         });
+// ================================== RoomName Check ===============================
+
+        $socket.on('room name',function(data){
+            $scope.roomName = data.roomName;
+        });
 // ================================== Schedule Popup ===============================
         $scope.popupSchedule = function(){
             // window.open("http://localhost:8080/schedule/addSchedule/"+$rootScope.roomKey,'TwiioChat','location=no,menubar=no,resizable=yes,status=no,width=500,height=500,top=100,left=100');
@@ -115,7 +134,6 @@ angular.module('Controllers')
         };
 
         $scope.$watch('schedule', function () {
-            console.log("here is a afterAddSchedule");
             $socket.emit('schedule check',{roomKey : $scope.roomKey},function(){
             });
         });
@@ -135,6 +153,9 @@ angular.module('Controllers')
                     historyLine.ownMsg = false;
                 }
                 //////////////
+
+                historyLine.length = (historyLine.msg.length*2.5)+2.5;
+
                 $scope.messeges.push(historyLine);
             });
 
@@ -143,13 +164,9 @@ angular.module('Controllers')
 // ================================== MongoDB Export ===============================
 
         $scope.mongoExport = function(){
-
-            console.log('here is a mongoExport')
-
             $http.post($rootScope.baseUrl + "/v1/getMongo", {roomKey : $scope.roomKey, userName : $scope.userName}).success(function (response){
                 $('#mongoDB').find('i').click();
             });
-
         };
 
 
@@ -299,6 +316,7 @@ angular.module('Controllers')
             }else{
                 data.ownMsg = false;
             }
+            data.length = (data.msg.length*2.5)+2.5;
             $scope.messeges.push(data);
         });
 
