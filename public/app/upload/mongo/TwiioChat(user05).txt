@@ -1,0 +1,4 @@
+{"msg":"afa","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"1:53 pm"}
+{"msg":"","hasMsg":false,"userName":"user05","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"1:54 pm","serverfilename":"map(1518152065897).png"}
+{"msg":"1qwe","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"2:25 pm"}
+{"userName":"user05","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"2:25 pm","serverfilename":"upload_58fb93e67f6d3f5a31dc8426352657ab.jpg","filename":"2015013007140002000075255_.jpg","size":"1.54 MB"}

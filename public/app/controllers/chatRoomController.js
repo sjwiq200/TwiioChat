@@ -53,10 +53,10 @@ angular.module('Controllers')
         $scope.mapUrl = "";
         $scope.schedule = "";
         $scope.roomName = "";
-        // $scope.nodePath = "http://192.168.0.29:8282/";
-        // $scope.tomcatPath ="http://192.168.0.29:8080/";
-        $scope.nodePath = "http://localhost:8282/";
-        $scope.tomcatPath ="http://localhost:8080/";
+        $scope.nodePath = "http://192.168.0.29:8282/";
+        $scope.tomcatPath ="http://192.168.0.29:8080/";
+        // $scope.nodePath = "http://localhost:8282/";
+        // $scope.tomcatPath ="http://localhost:8080/";
 
 
         // redirection if user is not logged in.
@@ -78,7 +78,10 @@ angular.module('Controllers')
                 }
             }
         };
-
+// ================================== Plus Function Event ===============================
+        $scope.updateRoomOpen = function () {
+            window.open($scope.tomcatPath+"room/updateRoomOpen/"+$rootScope.roomKey,'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');;
+        }
 // ================================== Online Members List ===============================
         $socket.emit('get-online-members',{userName : $scope.userName, roomKey: $scope.roomKey, userNo : $scope.userNo},function(data){
         });
@@ -91,7 +94,7 @@ angular.module('Controllers')
 
         $scope.getProfile = function(userNo){
             console.log("here is a get Profile"+userNo);
-            window.open($scope.tomcatPath+"room/getProfile/"+userNo,'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=500,top=100,left=100');;
+            window.open($scope.tomcatPath+"room/getProfile/"+userNo,'TwiioChat','location=no,menubar=no,resizable=no,status=no,width=500,height=700,top=100,left=100');;
         };
 
 // ================================== listFriend Click Event ===============================

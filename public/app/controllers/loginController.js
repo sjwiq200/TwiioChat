@@ -16,7 +16,7 @@ angular.module('Controllers',[])
 .controller('loginCtrl', function ($scope, $location, $rootScope, $socket, $routeParams){		// Login Controller
 	// Varialbles Initialization.
 	console.log("here is a loginCtrl");
-	$scope.userAvatar = "Avatar1.jpg";
+	$scope.userAvatar = "http://localhost:8080/resources/images/room/Avatar1.jpg";
 	$scope.isErrorReq = false;
 	$scope.isErrorNick = false;
 	// $scope.userName = "";
@@ -78,7 +78,7 @@ angular.module('Controllers',[])
 			});
 		};
 	}
-	$scope.changeAvatar = function(avatar){		// secting different avatar
+	/*$scope.changeAvatar = function(avatar){		// secting different avatar
 			$scope.userAvatar = avatar;
-	}
+	}*/
 })

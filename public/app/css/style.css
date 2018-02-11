@@ -157,6 +157,7 @@ plus Function Toggle Component
 	bottom: 0;
 	right: -100%;
 	/*background: #6DAD53;*/
+	background: transparent;
 	width: 50%;
 	height: 8%;
 	-webkit-transition-duration: 0.3s;

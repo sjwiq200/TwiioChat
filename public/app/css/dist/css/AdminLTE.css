@@ -12,7 +12,7 @@
  */
 html,
 body {
-  min-height: 100%;
+  min-height: 95%;
 }
 .layout-boxed html,
 .layout-boxed body {
@@ -1711,10 +1711,9 @@ a:focus {
 .box-header > .ion,
 .box-header .box-title {
   display: inline-block;
-  font-size: 24px;
+  font-size: 18px;
   margin: 0;
   line-height: 1;
-  margin-top: 2%;
 }
 .box-header .box-schedule-img {
   display: inline-block;
@@ -1723,18 +1722,20 @@ a:focus {
 }
 .box-header .box-schedule {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
   line-height: 1;
+  padding-left: 1%;
+  padding-top: 0.5%;
 }
 .box-header > .fa,
 .box-header > .glyphicon,
 .box-header > .ion {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .box-header > .box-tools {
   position: absolute;
-  right: 10px;
+  right: 20px;
   top: 5px;
 }
 .box-header > .box-tools [data-toggle="tooltip"] {
@@ -1745,7 +1746,7 @@ a:focus {
   left: auto;
 }
 .btn-box-tool {
-  padding: 5px;
+  padding: 2px;
   font-size: 12px;
   background: transparent;
   box-shadow: none!important;

@@ -9,25 +9,20 @@
           <div class="box box-primary direct-chat" style="border-top-color: rgba(215, 58, 49, 0.8)"  >
 
             <div class="box-header with-border">
-              <div class="col-sm-5">
-                <h2 class="box-title pull-left" >{{roomName}}</h2></br>
-              </div>
-              <div class="col-sm-1">
-                <img class="pull-left box-schedule-img" src="app/css/dist/img/calendar.png" style="width: 80%;height: 80%;">
-              </div>
-              <div class="col-sm-6">
-                <h1 class="box-schedule pull-left" ng-show="schedule.isSchedule"> date : {{schedule.scheduleDate}}</h1></br>
+                <h2 class="box-title pull-left" >{{roomName}}</h2>
+              <div ng-show="schedule.isSchedule"><hr></div>
+                <img class="box-title pull-left" ng-show="schedule.isSchedule" src="app/css/dist/img/calendar.png" style="width: 25px;height: 25px;">
+                <h1 class="box-schedule pull-left" ng-show="schedule.isSchedule"> date : {{schedule.scheduleDate}}</h1>
                 <h1 class="box-schedule pull-left" ng-show="schedule.isSchedule"> Address : {{schedule.scheduleAddress}}</h1>
-              </div>
               <div class="box-tools pull-right">
                 <!-- plus Function-->
-                <button class="btn btn-box-tool mobile" ng-click="plusFunction()" data-toggle="tooltip" title="추가기능"><i class="glyphicon glyphicon-plus"></i></button>
+                <button class="btn btn-box-tool mobile" ng-click="plusFunction()"><i class="glyphicon glyphicon-plus"></i></button>
                 <!-- Google Map -->
-                <button class="btn btn-box-tool mobile" data-widget="" ngf-select ng-click="googleMap()"><i class="glyphicon glyphicon-globe"></i></button>
+                <button class="btn btn-box-tool mobile" ng-click="googleMap()"><i class="glyphicon glyphicon-globe"></i></button>
                 <!-- EXPORT Button -->
-                <button class="btn btn-box-tool mobile" data-widget="" ngf-select ng-click="mongoExport()"><i class="glyphicon glyphicon-save-file"></i></button>
+                <button class="btn btn-box-tool mobile" ng-click="mongoExport()"><i class="glyphicon glyphicon-save-file"></i></button>
                 <!-- Any File Select Button -->
-                <button class="btn btn-box-tool mobile" data-widget="" ngf-select ng-model="Files"><i class="glyphicon glyphicon-paperclip"></i></button>
+                <button class="btn btn-box-tool mobile" ng-model="Files"><i class="glyphicon glyphicon-paperclip"></i></button>
                 <!-- onlime member list mobile -->
                 <button class="btn btn-box-tool mobile toggle-contact-icon" data-toggle="tooltip" data-widget="chat-pane-toggle" title="Contacts" ng-click="toggleCustom()"><i class="fa fa-comments"></i></button>
               </div>
@@ -45,7 +40,9 @@
                     <span class='direct-chat-timestamp pull-left' ng-show="messege.ownMsg">{{ messege.msgTime }}</span>
                     <span class='direct-chat-timestamp pull-right' ng-hide="messege.ownMsg">{{ messege.msgTime }}</span>
                   </div><!-- /.direct-chat-info -->
-                  <img class="direct-chat-img" ng-src="app/css/dist/img/{{messege.userAvatar}}" alt="message user image" /><!-- /.direct-chat-img -->
+                  <!--<img class="direct-chat-img" ng-src="app/css/dist/img/{{messege.userAvatar}}" alt="message user image" />-->
+                  <!-- /.direct-chat-img -->
+                  <img class="direct-chat-img" ng-src="{{messege.userAvatar}}" /><!-- /.direct-chat-img -->
                   <div ng-class="{'direct-chat-text' : true, 'text-right' : messege.ownMsg}" style="width: {{messege.length}}%" >
                     <!--ng-style="{backgroundColor : !messege.ownMsg ? '#56B1BF' : '#DOD3C5'}"-->
                     <div ng-hide="hasFile">{{ messege.msg }}</div>
@@ -155,12 +152,11 @@
                 <div>
                   <div class="plus-function-toggle">
 
-
-                    <button class="btn btn-flat" ng-show="userNo == master"  ng-click="popupSchedule()"><img ng-src="app/css/dist/img/location.png" style="width: 35px;height: 35px;"></button>
-
-                    <button class="btn btn-flat" ng-click="listFriend(roomKey)"><img ng-src="app/css/dist/img/party.png" style="width: 35px;height: 35px;"></button>
-                    <button class="btn btn-flat" ng-click="listRoomUser(roomKey)"><img ng-src="app/css/dist/img/group-button.png" style="width: 35px;height: 35px;"></button>
-                    <button class="btn btn-flat" ng-click="addReport(roomKey)"><img ng-src="app/css/dist/img/warning.png" style="width: 35px;height: 35px;"></button>
+                    <button class="btn btn-flat" title="공개여부" ng-show="userNo == master"  ng-click="updateRoomOpen()"><img ng-src="app/css/dist/img/unlocked.png" style="width: 35px;height: 35px;"></button>
+                    <button class="btn btn-flat" title="일정FIX" ng-show="userNo == master"  ng-click="popupSchedule()"><img ng-src="app/css/dist/img/location.png" style="width: 35px;height: 35px;"></button>
+                    <button class="btn btn-flat" title="친구목록" ng-click="listFriend(roomKey)"><img ng-src="app/css/dist/img/party.png" style="width: 35px;height: 35px;"></button>
+                    <button class="btn btn-flat" title="채팅유저" ng-click="listRoomUser(roomKey)"><img ng-src="app/css/dist/img/group-button.png" style="width: 35px;height: 35px;"></button>
+                    <button class="btn btn-flat"  title="신고하기" ng-click="addReport(roomKey)"><img ng-src="app/css/dist/img/warning.png" style="width: 35px;height: 35px;"></button>
 
                   </div>
                 </div>
@@ -177,7 +173,8 @@
                     <ul class='contacts-list'>
                       <li ng-repeat="user in users">
                         <a href>
-                          <img class='contacts-list-img' ng-src='app/css/dist/img/{{user.userAvatar}}'/>
+                          <!--<img class='contacts-list-img' ng-src='app/css/dist/img/{{user.userAvatar}}'/>-->
+                          <img class='contacts-list-img' ng-src='{{user.userAvatar}}'/>
                           <div class='contacts-list-info'>
                             <span class="ol-memeber-name" style="line-height:2.6; padding:5px; font-weight : 600; color : #333;">{{ user.userName }}</span>
                           </div><!-- /.contacts-list-info -->
@@ -243,7 +240,8 @@
                   <li ng-repeat="user in users">
                     <a href ng-click="getProfile(user.userNo)">
                       <input type="hidden" id="profileUserNo" ng-model="profileUserNo" value="{{user.userNo}}">
-                      <img class='contacts-list-img' ng-src='app/css/dist/img/{{user.userAvatar}}'/>
+                      <!--<img class='contacts-list-img' ng-src='app/css/dist/img/{{user.userAvatar}}'/>-->
+                      <img class='contacts-list-img' ng-src='{{user.userAvatar}}'/>
                       <div class='contacts-list-info'>
                         <span class="ol-memeber-name" style="line-height:2.6; padding:5px; font-weight : 600; color : #333;">{{user.userName }}</span>
                       </div><!-- /.contacts-list-info -->
