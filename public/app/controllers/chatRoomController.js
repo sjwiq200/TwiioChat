@@ -300,7 +300,7 @@ angular.module('Controllers')
                 $scope.isFileSelected = false;
                 $scope.isMsg = true;
                 var dateString = formatAMPM(new Date());
-                $socket.emit("send-message",{ userName : $rootScope.userName, userAvatar : $rootScope.userAvatar, msg : $scope.chatMsg, hasMsg : $scope.isMsg , hasFile : $scope.isFileSelected , msgTime : dateString, roomKey : $rootScope.roomKey , istype : "map"}, function(data){
+                $socket.emit("send-message",{ userName : $rootScope.userName, userAvatar : $rootScope.userAvatar, msg : $scope.chatMsg, hasMsg : $scope.isMsg , hasFile : $scope.isFileSelected , msgTime : dateString, roomKey : $rootScope.roomKey}, function(data){
                     //delivery report code goes here
                     if (data.success == true) {
                         $scope.chatMsg = "";

@@ -204,6 +204,7 @@ ios.on('connection', function(socket){
 
 // ================================== MongoDB History ===============================
     socket.on('history request', function(data) {
+        console.log("history request ==> "+ JSON.stringify(data));
         var Chat = mongoose.model('Chat',chatSchema,'chat'+data.roomKey);
         var history = [];
         Chat.find(function(err,result) {
@@ -281,6 +282,7 @@ ios.on('connection', function(socket){
 			    console.log("data.hasMsg");
 				// ios.sockets.emit('new message', data);
 				ios.sockets.in(data.roomKey).emit('new message', data);
+
 				var chat = new Chat({userName:data.userName,
 									userAvatar:data.userAvatar,
 									msg:data.msg,
@@ -348,6 +350,7 @@ ios.on('connection', function(socket){
 
 // ================================== disconnect user handling ==================================
 	socket.on('disconnect', function () {
+	    console.log("here is a disconnect");
 		delete nickname[socket.userName];
 		online_member = [];
 		x = Object.keys(nickname);
