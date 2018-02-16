@@ -53,10 +53,10 @@ angular.module('Controllers')
         $scope.mapUrl = "";
         $scope.schedule = "";
         $scope.roomName = "";
-        $scope.nodePath = "http://192.168.0.29:8282/";
-        $scope.tomcatPath ="http://192.168.0.29:8080/";
-        // $scope.nodePath = "http://localhost:8282/";
-        // $scope.tomcatPath ="http://localhost:8080/";
+        // $scope.nodePath = "http://192.168.0.29:8282/";
+        // $scope.tomcatPath ="http://192.168.0.29:8080/";
+        $scope.nodePath = "http://localhost:8282/";
+        $scope.tomcatPath ="http://localhost:8080/";
 
 
         // redirection if user is not logged in.
