@@ -145,7 +145,7 @@ angular.module('Controllers')
             window.open($scope.tomcatPath+"room/addReport/"+roomKey,'TwiioChat','location=no,menubar=no,resizable=yes,status=no,width=500,height=500,top=100,left=100');
         };
 // ================================== MongoDB History ===============================
-        $socket.emit('history request', {userName : $scope.userName, roomKey: $scope.roomKey, isSchedule : false}, function() {
+        $socket.emit('history request', {userName : $scope.userName, roomKey: $scope.roomKey, isSchedule : false, length : ""}, function() {
         });
         $socket.on('history response', function(data){
 
@@ -157,7 +157,12 @@ angular.module('Controllers')
                 }
                 //////////////
 
-                historyLine.length = (historyLine.msg.length*2.5)+2.5;
+                console.log("history response ==>"+JSON.stringify(historyLine));
+
+                if(historyLine.msg != null){
+                    historyLine.length = (historyLine.msg.length)*2.5+2.5;
+                }
+
 
                 $scope.messeges.push(historyLine);
             });

@@ -13,7 +13,11 @@ var io = require('socket.io');				// using sockets
 var ios = io.listen(server);				// listening sockets
 var formidable = require('formidable');		// file upload module
 var util = require('util');
+var FCM = require('fcm-node');
 
+// var fcmServerKey = "AIzaSyCzPtrkDQXL1JJ6jlG6CJ5PZ-dJTbABJVY";
+var fcmServerKey = "AAAAww1MU00:APA91bHFe3YgJkxdOpQ5btg4zra6UGpWAOih_gpNKOKpVNBd1_bo7or81a2qRPz4J7bI-Sk8Zeu6aluukjU60YNCwn2mye5yc08-ubxn2YDuTiTWPpWxD8Sv3rNm52Uosa99OVhtuvwc";
+var clientToken = "fQh3ckLcvRo:APA91bH4y1SOXuYosnRrwGwKLgVD04lLSmoqNfkhYgHVFGpZziKZhX3TE6myk0_9kse9j_cHamuKHQF9N6NMgE8EIzMCSb6zYqvHfmUx_inEbURYF6_3yl4FuvbBhdjtb-Bppl_lPb0h";
 
 
 /**
@@ -233,8 +237,8 @@ ios.on('connection', function(socket){
                     filename : result[i].filename,
                     // size : bytesToSize(files.file.size)
                     size : result[i].size,
-                    isMapFile : result[i].isMapFile
-
+                    isMapFile : result[i].isMapFile,
+                    length : ""
                 };
                 history.push(dbData);
 
@@ -275,6 +279,48 @@ ios.on('connection', function(socket){
     });
 // ================================== sending new message ==================================
 	socket.on('send-message', function(data, callback){
+
+        //****************************************************************
+        /** 발송할 Push 메시지 내용 */
+        var push_data = {
+            // 수신대상
+            to: clientToken,
+            // App이 실행중이지 않을 때 상태바 알림으로 등록할 내용
+            notification: {
+                // title: "Hello Node",
+                title : data.userName,
+                // body: "Node로 발송하는 Push 메시지 입니다.",
+                body : data.msg,
+                sound: "default",
+                click_action: "FCM_PLUGIN_ACTIVITY",
+                icon: "fcm_push_icon"
+            },
+            // 메시지 중요도
+            priority: "high",
+            // App 패키지 이름
+            restricted_package_name: "com.twiio.good.twiio",
+            // App에게 전달할 데이터
+            data: {
+                num1: 2000,
+                num2: 3000
+            }
+        };
+
+        /** 아래는 푸시메시지 발송절차 */
+        var fcm = new FCM(fcmServerKey);
+
+        fcm.send(push_data, function(err, response) {
+            if (err) {
+                console.error('Push메시지 발송에 실패했습니다.');
+                console.error(err);
+                return;
+            }
+
+            console.log('Push메시지가 발송되었습니다.');
+            console.log(response);
+        });
+
+        //****************************************************************
         var Chat = mongoose.model('Chat',chatSchema,'chat'+data.roomKey);
 		console.log('here is a send-message ==>' + JSON.stringify(data));
 		if (nickname[data.userName]) {
@@ -368,6 +414,8 @@ ios.on('connection', function(socket){
 // ================================== route for uploading images asynchronously ==================================
 app.post('/v1/uploadImage',function (req, res){
 
+    console.log("here is a uploadImage");
+
 	var imgdatetimenow = Date.now();
 	var form = new formidable.IncomingForm({
       	uploadDir: __dirname + '/public/app/upload/images',
@@ -393,6 +441,8 @@ app.post('/v1/uploadImage',function (req, res){
 				filename : files.file.name,
 				size : bytesToSize(files.file.size)
 		};
+
+		console.log("image Data in form ==>" +JSON.stringify(data));
 
 
 	    var image_file = { 
