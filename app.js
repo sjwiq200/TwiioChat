@@ -13,7 +13,9 @@ var io = require('socket.io');				// using sockets
 var ios = io.listen(server);				// listening sockets
 var formidable = require('formidable');		// file upload module
 var util = require('util');
-var FCM = require('fcm-node');
+var FCM = require('fcm-node');              //FCM
+var scheduleModule = require('node-schedule'); //Scheduler module
+var date_util = require('date-utils');
 
 // var fcmServerKey = "AIzaSyCzPtrkDQXL1JJ6jlG6CJ5PZ-dJTbABJVY";
 var fcmServerKey = "AAAAww1MU00:APA91bHFe3YgJkxdOpQ5btg4zra6UGpWAOih_gpNKOKpVNBd1_bo7or81a2qRPz4J7bI-Sk8Zeu6aluukjU60YNCwn2mye5yc08-ubxn2YDuTiTWPpWxD8Sv3rNm52Uosa99OVhtuvwc";
@@ -90,7 +92,13 @@ var scheduleSchema = mongoose.Schema({
 var roomSchema = mongoose.Schema({
     roomKey : String,
     roomName : String
-})
+});
+
+var fcmSchema = mongoose.Schema({
+    roomKey : String,
+    userNo : String,
+    token : String
+});
 
 
 
@@ -138,6 +146,81 @@ app.use(function(req, res, next) {
   next();
 });
 
+
+
+//SchedulerModule for FCM
+var rule = new scheduleModule.RecurrenceRule();
+rule.minute = 46;
+var j = scheduleModule.scheduleJob(rule, function(){
+   console.log("ScheduleModule");
+
+    /////////////////////////////////////////////////////////////////////////////////////
+
+    var testDate = new Date().toFormat("YYYY-MM-DD");
+    console.log("testDate ==> " +testDate);
+
+    var Schedule = mongoose.model('Schedule',scheduleSchema,'schedules');
+    Schedule.find({'scheduleDate' : testDate},function(err,result) {
+        for (var i = 0; i < result.length; i++) {
+            console.log("schedulerModule == > " + result[i].roomKey);
+            var roomKey = result[i].roomKey;
+            var FcmToken = mongoose.model('FcmToken', fcmSchema, 'fcmTokens');
+            FcmToken.find({'roomKey': roomKey}, function (err, resultFCM) {
+                console.log("2222222 FIND ==> " + JSON.stringify(resultFCM));
+                for (var k = 0; k < resultFCM.length; k++) {
+                    console.log("token result ==> " + resultFCM[k].token);
+                    console.log("token result 333333==> " + resultFCM[k].userNo);
+
+                    //****************************************************************
+                    /** 발송할 Push 메시지 내용 */
+                    var push_data = {
+                        // 수신대상
+                        // to: clientToken,
+                        to: resultFCM[k].token,
+                        // App이 실행중이지 않을 때 상태바 알림으로 등록할 내용
+                        notification: {
+                            title: "약속한 일정입니다.",
+                            body: "만남 후에 유저평가를 해주세요~",
+                            sound: "default",
+                            click_action: "FCM_PLUGIN_ACTIVITY",
+                            icon: "fcm_push_icon"
+                        },
+                        // 메시지 중요도
+                        priority: "high",
+                        // App 패키지 이름
+                        restricted_package_name: "com.twiio.good.twiio",
+                        // App에게 전달할 데이터
+                        data: {
+                            num1: 2000,
+                            num2: 3000
+                        }
+                    };
+
+                    /** 아래는 푸시메시지 발송절차 */
+                    var fcm = new FCM(fcmServerKey);
+
+                    fcm.send(push_data, function (err, response) {
+                        if (err) {
+                            console.error('Push메시지 발송에 실패했습니다.');
+                            console.error(err);
+                            return;
+                        }
+
+                        console.log('Push메시지가 발송되었습니다.');
+                        console.log(response);
+                    });//END fcm.send
+
+                    //****************************************************************
+
+                }//END for Loof
+            });//END Find FcmToken
+        }//END for Loof
+    });//END Find Schedule
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+});// END Scheduler Module
+
 //sockets handling
 ios.on('connection', function(socket){
 	console.log("here is a socket io connection"+socket);
@@ -147,6 +230,29 @@ ios.on('connection', function(socket){
 	socket.on('new user', function(data, callback){
 		console.log("here is a socket.io new user"+JSON.stringify(data));
         console.log(data.roomKey);
+        console.log("kkkkk==> "+data.userNo);
+        console.log("FCM Tocken ==> " + data.fcmToken);
+        if(data.fcmToken != null){
+            console.log("data.fcmToken != null");
+            var FcmToken = mongoose.model('FcmToken',fcmSchema,'fcmTokens');
+            FcmToken.findOne({'roomKey' : data.roomKey, 'token' : data.fcmToken},function(err,result) {
+                if(result == null){
+                    console.log("result == null");
+                    var fcmToken = new FcmToken({
+                        userNo : data.userNo,
+                        roomKey : data.roomKey,
+                        token : data.fcmToken
+                    });
+
+                    fcmToken.save(function(err,data){
+                        if(err){
+                            console.log("error");
+                        }
+                        console.log("message is inserted");
+                    });
+                }
+            });
+        }
         if(nickname[data.userName])
 			{
 				callback({success:false});
@@ -279,48 +385,70 @@ ios.on('connection', function(socket){
     });
 // ================================== sending new message ==================================
 	socket.on('send-message', function(data, callback){
+        var FcmToken = mongoose.model('FcmToken',fcmSchema,'fcmTokens');
+        FcmToken.find({'roomKey':data.roomKey},function(err,result){
+            console.log("sendMessage ==> " + JSON.stringify(result));
+            for (var i = 0; i < result.length; i++) {
+                console.log("token result ==> " +result[i].token);
+                console.log("token result 22222==> " +data.userNo);
+                console.log("token result 333333==> " +result[i].userNo);
 
-        //****************************************************************
-        /** 발송할 Push 메시지 내용 */
-        var push_data = {
-            // 수신대상
-            to: clientToken,
-            // App이 실행중이지 않을 때 상태바 알림으로 등록할 내용
-            notification: {
-                // title: "Hello Node",
-                title : data.userName,
-                // body: "Node로 발송하는 Push 메시지 입니다.",
-                body : data.msg,
-                sound: "default",
-                click_action: "FCM_PLUGIN_ACTIVITY",
-                icon: "fcm_push_icon"
-            },
-            // 메시지 중요도
-            priority: "high",
-            // App 패키지 이름
-            restricted_package_name: "com.twiio.good.twiio",
-            // App에게 전달할 데이터
-            data: {
-                num1: 2000,
-                num2: 3000
+                if(result[i].userNo != data.userNo){
+                    console.log("hhhjjjhhhhhhhh");
+
+                    //****************************************************************
+                    /** 발송할 Push 메시지 내용 */
+                    var push_data = {
+                        // 수신대상
+                        // to: clientToken,
+                        to: result[i].token,
+                        // App이 실행중이지 않을 때 상태바 알림으로 등록할 내용
+                        notification: {
+                            // title: "Hello Node",
+                            title : data.userName,
+                            // body: "Node로 발송하는 Push 메시지 입니다.",
+                            body : data.msg,
+                            sound: "default",
+                            click_action: "FCM_PLUGIN_ACTIVITY",
+                            icon: "fcm_push_icon"
+                        },
+                        // 메시지 중요도
+                        priority: "high",
+                        // App 패키지 이름
+                        restricted_package_name: "com.twiio.good.twiio",
+                        // App에게 전달할 데이터
+                        data: {
+                            num1: 2000,
+                            num2: 3000
+                        }
+                    };
+
+                    /** 아래는 푸시메시지 발송절차 */
+                    var fcm = new FCM(fcmServerKey);
+
+                    fcm.send(push_data, function(err, response) {
+                        if (err) {
+                            console.error('Push메시지 발송에 실패했습니다.');
+                            console.error(err);
+                            return;
+                        }
+
+                        console.log('Push메시지가 발송되었습니다.');
+                        console.log(response);
+                    });
+
+                    //****************************************************************
+
+                }//ENd if
+
+
+
+
+
             }
-        };
-
-        /** 아래는 푸시메시지 발송절차 */
-        var fcm = new FCM(fcmServerKey);
-
-        fcm.send(push_data, function(err, response) {
-            if (err) {
-                console.error('Push메시지 발송에 실패했습니다.');
-                console.error(err);
-                return;
-            }
-
-            console.log('Push메시지가 발송되었습니다.');
-            console.log(response);
         });
 
-        //****************************************************************
+
         var Chat = mongoose.model('Chat',chatSchema,'chat'+data.roomKey);
 		console.log('here is a send-message ==>' + JSON.stringify(data));
 		if (nickname[data.userName]) {
@@ -766,6 +894,65 @@ app.post('/v1/getMongo',function(req,res){
     res.send(mongoFile);
 
 	
+
+});
+
+app.post('/v1/requestFCM', function(req,res){
+    console.log("here is a requestFCM");
+    res.end();
+    console.log("hello ==>" + JSON.stringify(req.body));
+    var roomKey = req.body.roomKey;
+    console.log("hello ==>" + roomKey );
+
+    var FcmToken = mongoose.model('FcmToken',fcmSchema,'fcmTokens');
+    FcmToken.find({'roomKey':roomKey},function(err,result) {
+        console.log("sendMessage ==> " + JSON.stringify(result));
+        for (var i = 0; i < result.length; i++) {
+
+            //****************************************************************
+            /** 발송할 Push 메시지 내용 */
+            var push_data = {
+                // 수신대상
+                // to: clientToken,
+                to: result[i].token,
+                // App이 실행중이지 않을 때 상태바 알림으로 등록할 내용
+                notification: {
+                    // title: "Hello Node",
+                    title: "Schedule FIX",
+                    // body: "Node로 발송하는 Push 메시지 입니다.",
+                    body: "Date : " + req.body.scheduleDate + ",Address : " + req.body.scheduleAddress,
+                    sound: "default",
+                    click_action: "FCM_PLUGIN_ACTIVITY",
+                    icon: "fcm_push_icon"
+                },
+                // 메시지 중요도
+                priority: "high",
+                // App 패키지 이름
+                restricted_package_name: "com.twiio.good.twiio",
+                // App에게 전달할 데이터
+                data: {
+                    num1: 2000,
+                    num2: 3000
+                }
+            };
+
+            /** 아래는 푸시메시지 발송절차 */
+            var fcm = new FCM(fcmServerKey);
+
+            fcm.send(push_data, function (err, response) {
+                if (err) {
+                    console.error('Push메시지 발송에 실패했습니다.');
+                    console.error(err);
+                    return;
+                }
+
+                console.log('Push메시지가 발송되었습니다.');
+                console.log(response);
+            });
+
+            //****************************************************************
+        }
+    });
 
 });
 

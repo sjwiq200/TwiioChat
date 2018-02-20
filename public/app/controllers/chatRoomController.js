@@ -53,10 +53,10 @@ angular.module('Controllers')
         $scope.mapUrl = "";
         $scope.schedule = "";
         $scope.roomName = "";
-        // $scope.nodePath = "http://192.168.0.29:8282/";
-        // $scope.tomcatPath ="http://192.168.0.29:8080/";
-        $scope.nodePath = "http://localhost:8282/";
-        $scope.tomcatPath ="http://localhost:8080/";
+        $scope.nodePath = "http://192.168.0.33:8282/";
+        $scope.tomcatPath ="http://192.168.0.33:8080/";
+        // $scope.nodePath = "http://localhost:8282/";
+        // $scope.tomcatPath ="http://localhost:8080/";
 
 
         // redirection if user is not logged in.
@@ -305,7 +305,7 @@ angular.module('Controllers')
                 $scope.isFileSelected = false;
                 $scope.isMsg = true;
                 var dateString = formatAMPM(new Date());
-                $socket.emit("send-message",{ userName : $rootScope.userName, userAvatar : $rootScope.userAvatar, msg : $scope.chatMsg, hasMsg : $scope.isMsg , hasFile : $scope.isFileSelected , msgTime : dateString, roomKey : $rootScope.roomKey}, function(data){
+                $socket.emit("send-message",{ userName : $rootScope.userName, userAvatar : $rootScope.userAvatar, msg : $scope.chatMsg, hasMsg : $scope.isMsg , hasFile : $scope.isFileSelected , msgTime : dateString, roomKey : $rootScope.roomKey, userNo : $rootScope.userNo}, function(data){
                     //delivery report code goes here
                     if (data.success == true) {
                         $scope.chatMsg = "";

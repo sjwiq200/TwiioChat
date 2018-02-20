@@ -30,6 +30,7 @@
   ],
   "dependencies": {
     "body-parser": "^1.18.2",
+    "date-utils": "^1.2.21",
     "express": "^3.2.6",
     "fcm-node": "^1.2.1",
     "formidable": "^1.0.17",
@@ -37,6 +38,7 @@
     "html2canvas": "^1.0.0-alpha.9",
     "mongoose": "^4.11.14",
     "multer": "^0.1.8",
+    "node-schedule": "^1.3.0",
     "socket.io": "^1.7.4",
     "util": "^0.10.3"
   },
