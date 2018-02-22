@@ -1,4 +1,6 @@
-{"msg":"afa","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"1:53 pm"}
-{"msg":"","hasMsg":false,"userName":"user05","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"1:54 pm","serverfilename":"map(1518152065897).png"}
-{"msg":"1qwe","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"2:25 pm"}
-{"userName":"user05","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"2:25 pm","serverfilename":"upload_58fb93e67f6d3f5a31dc8426352657ab.jpg","filename":"2015013007140002000075255_.jpg","size":"1.54 MB"}
+{"msg":"rrr","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"7021 pm"}
+{"msg":"fsdfsdf","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"7021 pm"}
+{"msg":"fsfdfsdfsdf","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"7021 pm"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"7045 pm","serverfilename":"upload_16175ede363ac7ce72bd66f715f5ab29.jpg","filename":"IMG_20180221_122404.jpg","size":"28.56 KB"}
+{"msg":"dfsdf","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"9:56 pm"}
+{"userName":"user05","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"9:56 pm","serverfilename":"upload_6cda0b7413fd3946e06818fbad7a8847.jpg","filename":"upload_b59edc5441a25805a1c823142bceab1d.jpg","size":"6.16 KB"}

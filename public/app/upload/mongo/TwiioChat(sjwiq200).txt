@@ -1,2 +1,1 @@
-{"msg":"asdf","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"1:49 pm"}
-{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"1:49 pm","serverfilename":"upload_32416963e681c6c88a15deabebeb32eb.png","filename":"unlocked.png","size":"2.04 KB"}
+{"msg":"dfgdfgd","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"9:09 pm"}

@@ -42,7 +42,7 @@
                   </div><!-- /.direct-chat-info -->
                   <!--<img class="direct-chat-img" ng-src="app/css/dist/img/{{messege.userAvatar}}" alt="message user image" />-->
                   <!-- /.direct-chat-img -->
-                  <img class="direct-chat-img" ng-src="{{messege.userAvatar}}" /><!-- /.direct-chat-img -->
+                  <img class="direct-chat-img" ng-src="{{messege.userAvatar}}" onerror="javascript:this.src='http://192.168.0.33:8080/resources/images/room/default.jpeg'"/><!-- /.direct-chat-img -->
                   <div ng-class="{'direct-chat-text' : true, 'text-right' : messege.ownMsg}" style="width: {{messege.length}}%" >
                     <!--ng-style="{backgroundColor : !messege.ownMsg ? '#56B1BF' : '#DOD3C5'}"-->
                     <div ng-hide="hasFile">{{ messege.msg }}</div>
@@ -174,7 +174,7 @@
                       <li ng-repeat="user in users">
                         <a href>
                           <!--<img class='contacts-list-img' ng-src='app/css/dist/img/{{user.userAvatar}}'/>-->
-                          <img class='contacts-list-img' ng-src='{{user.userAvatar}}'/>
+                          <img class='contacts-list-img' ng-src='{{user.userAvatar}}' onerror="javascript:this.src='http://192.168.0.33:8080/resources/images/room/default.jpeg'"/>
                           <div class='contacts-list-info'>
                             <span class="ol-memeber-name" style="line-height:2.6; padding:5px; font-weight : 600; color : #333;">{{ user.userName }}</span>
                           </div><!-- /.contacts-list-info -->
@@ -241,7 +241,7 @@
                     <a href ng-click="getProfile(user.userNo)">
                       <input type="hidden" id="profileUserNo" ng-model="profileUserNo" value="{{user.userNo}}">
                       <!--<img class='contacts-list-img' ng-src='app/css/dist/img/{{user.userAvatar}}'/>-->
-                      <img class='contacts-list-img' ng-src='{{user.userAvatar}}'/>
+                      <img class='contacts-list-img' ng-src='{{user.userAvatar}}' onerror="javascript:this.src='http://192.168.0.33:8080/resources/images/room/default.jpeg'"/>
                       <div class='contacts-list-info'>
                         <span class="ol-memeber-name" style="line-height:2.6; padding:5px; font-weight : 600; color : #333;">{{user.userName }}</span>
                       </div><!-- /.contacts-list-info -->
