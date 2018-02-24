@@ -53,8 +53,8 @@ angular.module('Controllers')
         $scope.mapUrl = "";
         $scope.schedule = "";
         $scope.roomName = "";
-        $scope.nodePath = "http://192.168.0.33:8282/";
-        $scope.tomcatPath ="http://192.168.0.33:8080/";
+        $scope.nodePath = "http://192.168.0.54:8282/";
+        $scope.tomcatPath ="http://192.168.0.54:8080/";
         // $scope.nodePath = "http://localhost:8282/";
         // $scope.tomcatPath ="http://localhost:8080/";
 
@@ -160,7 +160,15 @@ angular.module('Controllers')
                 console.log("history response ==>"+JSON.stringify(historyLine));
 
                 if(historyLine.msg != null){
-                    historyLine.length = (historyLine.msg.length)*2.5+2.5;
+                    if(historyLine.istype =='map'){
+                        historyLine.length = 20;
+                    }else if(historyLine.istype == 'image'){
+                        historyLine.length = 30;
+                    }
+                    else{
+                        historyLine.length = ((historyLine.msg.length)*2.5);
+                    }
+
                 }
 
 
@@ -191,10 +199,10 @@ angular.module('Controllers')
         $scope.addMap = function(data){
 
             var dateString = formatAMPM(new Date());
-            var abc = $scope.mapUrl.split("twiio");
-            var serverFileName = 'map('+abc[1]+').png';
+            var mapString = $scope.mapUrl.split("twiio");
+            var serverFileName = 'map('+mapString[1]+').png';
 
-            $socket.emit("send-message",{ userName : $rootScope.userName, userAvatar : $rootScope.userAvatar, msg : abc[0], hasMsg : false , hasFile : true , msgTime : dateString, roomKey : $rootScope.roomKey, isMapFile : true, serverfilename : serverFileName, istype : 'map', isImageFile : false}, function(data){
+            $socket.emit("send-message",{ userName : $rootScope.userName, userAvatar : $rootScope.userAvatar, msg : mapString[0], hasMsg : false , hasFile : true , msgTime : dateString, roomKey : $rootScope.roomKey, isMapFile : true, serverfilename : serverFileName, istype : 'map', isImageFile : false}, function(data){
                 //delivery report code goes here
                 if (data.success == true) {
                     $scope.chatMsg = "";

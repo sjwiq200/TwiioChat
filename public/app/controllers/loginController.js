@@ -16,7 +16,7 @@ angular.module('Controllers',[])
 .controller('loginCtrl', function ($scope, $location, $rootScope, $socket, $routeParams){		// Login Controller
 	// Varialbles Initialization.
 	console.log("here is a loginCtrl");
-	$scope.userAvatar = "http://192.168.0.33:8080/resources/images/userimages/"+$routeParams.userName+".jpg";
+	$scope.userAvatar = "http://192.168.0.54:8080/resources/images/userimages/"+$routeParams.userName+".jpg";
 	$scope.isErrorReq = false;
 	$scope.isErrorNick = false;
 	// $scope.userName = "";

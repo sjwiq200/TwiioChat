@@ -1,1 +1,18 @@
-{"msg":"dfgdfgd","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"9:09 pm"}
+{"msg":"웅","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"2:36 pm"}
+{"msg":"hello","hasMsg":true,"userName":"kimdayoung","hasFile":false,"msgTime":"2:36 pm"}
+{"msg":"kim","hasMsg":true,"userName":"kimdayoung","hasFile":false,"msgTime":"2:36 pm"}
+{"msg":"let's eat","hasMsg":true,"userName":"kimdayoung","hasFile":false,"msgTime":"2:36 pm"}
+{"msg":"너사진 바꿔야되","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"2:36 pm"}
+{"msg":"안녕","hasMsg":true,"userName":"kimdayoung","hasFile":false,"msgTime":"2:37 pm"}
+{"msg":"hi","hasMsg":true,"userName":"user08","hasFile":false,"msgTime":"2:38 pm"}
+{"msg":"ㅇㅇㅇ","hasMsg":true,"userName":"kimdayoung","hasFile":false,"msgTime":"2:38 pm"}
+{"msg":"ㅣㅣㅣㅣ","hasMsg":true,"userName":"kimdayoung","hasFile":false,"msgTime":"2:38 pm"}
+{"msg":"6시에 에페탑앞에서 괜찮으신가요?","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"2:40 pm"}
+{"msg":"좋아용","hasMsg":true,"userName":"user08","hasFile":false,"msgTime":"2:40 pm"}
+{"msg":"안녕하세요","hasMsg":true,"userName":"kimdayoung","hasFile":false,"msgTime":"2:53 pm"}
+{"msg":"안녕","hasMsg":true,"userName":"user05","hasFile":false,"msgTime":"2:53 pm"}
+{"msg":"심재우 빨리와","hasMsg":true,"userName":"user08","hasFile":false,"msgTime":"3:23 pm"}
+{"msg":"네","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"6:52 pm"}
+{"msg":"같이 먹어요 제발","hasMsg":true,"userName":"sjwiq200","hasFile":false,"msgTime":"6:52 pm"}
+{"msg":"https://maps.google.com/?q=%EC%97%90%ED%8E%A0+%ED%83%91&ftid=0x47e66fe1f3bfb4ad:0x7bd31375becf28cd","hasMsg":false,"userName":"sjwiq200","hasFile":true,"isImageFile":false,"istype":"map","msgTime":"8:35 pm","serverfilename":"map(1519385738291).png"}
+{"userName":"sjwiq200","hasFile":true,"isImageFile":true,"istype":"image","msgTime":"8:36 pm","serverfilename":"upload_ca536bfd68db0c68cdd82555ece609c7.jpg","filename":"picnic-1208229_1920.jpg","size":"639.54 KB"}

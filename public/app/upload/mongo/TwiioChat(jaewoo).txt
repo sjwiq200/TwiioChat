@@ -1,0 +1,1 @@
+{"msg":"안녕하세요 여러분","hasMsg":true,"userName":"jaewoo","hasFile":false,"msgTime":"11:32 am"}
